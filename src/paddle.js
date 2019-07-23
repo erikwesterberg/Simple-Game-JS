@@ -23,6 +23,10 @@ export default class Paddle {
          this.speed = this.maxSpeed
      }
 
+     stop() {
+        this.speed = 0
+     }
+
     draw(ctx) {
     ctx.fillStyle = "#0ff"
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
